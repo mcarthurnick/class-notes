@@ -60,13 +60,7 @@ git push origin master
 
 git pull origin master
 
-FileMerge
-
-Merge conflicts – Tools – p4merge? Search Google find one that works
-
-Visual Studio Code – GitKraken
-
-
+Merge conflicts – Tools – p4merge? Search Google find one that works - FileMerge?
 
 git checkout -b feature   (create different branch named feature)
 
@@ -77,6 +71,3 @@ git branch -d feature    - feature is the branch name
 git push origin :whatever-you-like
 
 PS1 Custom Prompt?
-
-
-Fork on Github, git clone
