@@ -1,0 +1,92 @@
+﻿Matt Winchester - Workfront
+
+GIT 
+
+______________________________
+
+git
+npm
+
+CLI - Command Line Interface
+
+Change prompt from default
+
+atom filename.txt  - Open file in command line
+
+commit - “What is new in your file system” - Timeline of changes
+Process of making a commit:
+
+ 	project
+		
+		file 1 +++-  (Have made changes) 
+
+
+			
+		file 2 +++
+		file 3
+2 Stage process -
+	Stage - 
+
+	Commit - 
+
+git init  (Initialize git repository)
+
+ls -a - show hidden files in directory
+
+git status – What's going on right now
+
+git add goatee.txt    or git add -m “Add this” goatee
+
+VIM – I = Insert, esc, :wq (write and quit)
+
+git log    (shows logs that happen up until where you are)
+
+git diff   ( shows the difference)
+
+Do both stages at once:
+
+git commit -am “complimented his stache”
+
+Every commit has a unique hash. (git log) – commit af3908uoijasdfjopij etc..
+
+git show hashnumber -
+
+	git show HEAD – Shows the last thing that was committed
+
+echo “add” > mustache.txt   ----   > change all of the text, >> will append
+
+GITHub – Hosts git repositories
+
+Push to github
+
+git remote add origin git@github.com:mcarthurnick/beard-man.git
+
+git remote -v 
+
+git remote remove origin git@github.com:mcarthurnick/beard-man.git
+
+git push origin master
+
+git pull origin master
+
+FileMerge
+
+Merge conflicts – Tools – p4merge? Search Google find one that works
+
+Visual Studio Code – GitKraken
+
+
+
+git checkout -b feature   (create different branch named feature)
+
+git pull --rebase – study
+
+git branch -d feature    - feature is the branch name
+
+git push origin :whatever-you-like
+
+PS1 Custom Prompt?
+
+
+Fork on Github, git clone
+
