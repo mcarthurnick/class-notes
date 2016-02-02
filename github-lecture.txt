@@ -1,6 +1,6 @@
 ﻿Matt Winchester - Workfront
 
-GIT 
+GIT
 
 ______________________________
 
@@ -15,19 +15,10 @@ atom filename.txt  - Open file in command line
 
 commit - “What is new in your file system” - Timeline of changes
 Process of making a commit:
-
- 	project
-		
-		file 1 +++-  (Have made changes) 
-
-
-			
-		file 2 +++
-		file 3
 2 Stage process -
-	Stage - 
+	Stage -
 
-	Commit - 
+	Commit -
 
 git init  (Initialize git repository)
 
@@ -61,7 +52,7 @@ Push to github
 
 git remote add origin git@github.com:mcarthurnick/beard-man.git
 
-git remote -v 
+git remote -v
 
 git remote remove origin git@github.com:mcarthurnick/beard-man.git
 
@@ -89,4 +80,3 @@ PS1 Custom Prompt?
 
 
 Fork on Github, git clone
-
