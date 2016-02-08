@@ -11,3 +11,51 @@ for (var p in nickCredit) {
     console.log(nickCredit[p]);
   }
 }
+
+//this logs 9894 8758 9409 8739
+
+//this for in loop, lists all of the property names of the nickCredit Object.
+for (var propertyName in nickCredit) {
+     console.log(propertyName);
+}
+
+//firstName
+//lastName
+//cardNumber
+//cardNumber
+//expireDate
+//zipCode
+
+
+//Nesting
+
+var nickForm = {
+     firstName: "nick",
+     lastName: "mcarthur",
+     withholdings: 10,
+     nickCredit: {     // nesting a new object inside of nickForm
+       firstName: 'Nick',
+       lastName: 'McArthur',
+       cardNumber: '9894 8758 9409 8739',
+       expireDate: '10/16',
+       zipCode: '84770'
+     },    // no semicolon needed
+     chargeCreditCard: function() {   //we can create an object that is a function
+       console.log('charging credit card');
+     }
+};
+
+nickForm.chargeCreditCard();
+
+//display properties and values in nickForm
+for (var p in nickForm) {
+  if (p === 'nickCredit') {
+    for (var ccProperty in nickForm[p]) {
+      console.log(ccProperty + ':' + nickForm[p][ccProperty]);
+    }
+  }
+}
+
+
+
+delete nickForm.nickCredit;  //delete a property
