@@ -59,3 +59,27 @@ for (var p in nickForm) {
 
 
 delete nickForm.nickCredit;  //delete a property
+
+// combineding 2 Objects into a new Object called combined line 75
+
+var creditCard = {
+  number: '1234 5678 9091 8984',
+  name: 'Nick McArthur'
+};
+
+var person = {
+  firstName: 'Nick',
+  lastName: 'McArthur'
+};
+
+var combined = {};
+
+for (var prop in creditCard) {
+  combined[prop] = creditCard[prop];
+}
+for (var prop in person) {
+  combined[prop] = person[prop];
+}
+console.log(combined);
+
+//shallow copy or deep copy?    The example above is a shallow copy
