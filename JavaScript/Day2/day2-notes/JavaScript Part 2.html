@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.4 (452971)"/><meta name="author" content="mcarthurnick@gmail.com"/><meta name="created" content="2016-02-08 16:48:41 +0000"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2016-02-08 17:31:03 +0000"/><title>JavaScript Part 2</title></head><body>
+<div><u><span style="font-size: 18px;"><b>Objects</b></span></u></div>
+<div><u><b><span style="font-size: 18px;"><br/></span></b></u></div>
+<div>Create an Object literal that models a Facebook message. We create an object literal using { }</div>
+<div><br/></div>
+<div><b>key:value  </b> keys === properties.</div>
+<div><br/></div>
+<div>var nickForm = {</div>
+<div>     firstName: ‘nick’,</div>
+<div>     lastName: ‘mcarthur’,</div>
+<div>     withholdings: 10,</div>
+<div>};</div>
+<div><br/></div>
+<div>var bobForm = {</div>
+<div>     firstName: ‘bob’,</div>
+<div>     lastName: ‘bobberson’,</div>
+<div>     withholdings: 5</div>
+<div>};</div>
+<div><br/></div>
+<div>var jonForm = newObject( );</div>
+<div>// same as...</div>
+<div><br/></div>
+<div>var jonForm = { };</div>
+<div><br/></div>
+<div>var name = ‘jared’;   //a string literal</div>
+<div><br/></div>
+<div>Javascript has built in Objects…   new</div>
+<div><br/></div>
+<div>var name = new String(‘jared’);</div>
+<div><br/></div>
+<div><span style="font-size: 18px;"><u><b>Dot Notation:</b></u></span></div>
+<div>Access the properties of Object...</div>
+<div><br/></div>
+<div>what comes after the dot is the name of the property</div>
+<div><br/></div>
+<div>console.log(jaredForm, firstName);</div>
+<div>jaredForm.firstName = ‘Jared’;</div>
+<div><br/></div>
+<div><span style="font-size: 18px;"><u><b>Bracket Notation</b></u></span></div>
+<div><br/></div>
+<div>var propertyName = ‘firstName’ ;</div>
+<div><br/></div>
+<div>Looping over properties of an object:</div>
+<div>propertyName could be any valid variable name (pName, x, etc..)</div>
+<div><br/></div>
+<div>
+<div>
+<div>var nickForm = {</div>
+<div>     firstName: ‘nick’,</div>
+<div>     lastName: ‘mcarthur’,</div>
+<div>     withholdings: 10,</div>
+</div>
+</div>
+<div>};</div>
+<div><br/></div>
+<div>//display name of properties</div>
+<div><br/></div>
+<div>for (var propertyName in jaredForm) {</div>
+<div>     console.log(propertyName);                       //displays        “firstName"</div>
+<div style="margin-left:80px;">}                                                                          “lastName"</div>
+<div style="margin-left:80px;">                                                                           “withholdings" </div>
+<div>//display values..</div>
+<div><br/></div>
+<div>for (var propertyName in jaredForm) {</div>
+<div>     console.log(jaredForm[p]);                         //displays      “nick"</div>
+<div>}                                                                                             “mcarthur"</div>
+<div>                                                                                                10</div>
+<div><br/></div>
+<div>for (var propertyName in jaredForm) {</div>
+<div>     console.log(jaredForm[‘first’ + ’Name']);                         //displays      “nick"</div>
+<div>}            //loops through 3 times because there is 3 properties                 “nick"</div>
+<div>                                                                                                                    “nick"</div>
+<div><br/></div>
+<div>.hasOwnProperty</div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+</body></html>
