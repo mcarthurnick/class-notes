@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.4 (452971)"/><meta name="author" content="mcarthurnick@gmail.com"/><meta name="created" content="2016-02-08 16:48:41 +0000"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2016-02-08 17:31:03 +0000"/><title>JavaScript Part 2</title></head><body>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export3.dtd">
+<en-export export-date="20160208T182438Z" application="Evernote" version="Evernote Mac 6.4 (452971)">
+<note><title>JavaScript Part 2</title><content><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
+<en-note>
 <div><u><span style="font-size: 18px;"><b>Objects</b></span></u></div>
 <div><u><b><span style="font-size: 18px;"><br/></span></b></u></div>
 <div>Create an Object literal that models a Facebook message. We create an object literal using { }</div>
@@ -58,20 +61,20 @@
 <div>//display name of properties</div>
 <div><br/></div>
 <div>for (var propertyName in jaredForm) {</div>
-<div>     console.log(propertyName);                       //displays        “firstName"</div>
-<div style="margin-left:80px;">}                                                                          “lastName"</div>
-<div style="margin-left:80px;">                                                                           “withholdings" </div>
+<div>     console.log(propertyName);                       //displays        “firstName&quot;</div>
+<div style="margin-left:80px;">}                                                                          “lastName&quot;</div>
+<div style="margin-left:80px;">                                                                           “withholdings&quot; </div>
 <div>//display values..</div>
 <div><br/></div>
 <div>for (var propertyName in jaredForm) {</div>
-<div>     console.log(jaredForm[p]);                         //displays      “nick"</div>
-<div>}                                                                                             “mcarthur"</div>
+<div>     console.log(jaredForm[p]);                         //displays      “nick&quot;</div>
+<div>}                                                                                             “mcarthur&quot;</div>
 <div>                                                                                                10</div>
 <div><br/></div>
 <div>for (var propertyName in jaredForm) {</div>
-<div>     console.log(jaredForm[‘first’ + ’Name']);                         //displays      “nick"</div>
-<div>}            //loops through 3 times because there is 3 properties                 “nick"</div>
-<div>                                                                                                                    “nick"</div>
+<div>     console.log(jaredForm[‘first’ + ’Name']);                         //displays      “nick&quot;</div>
+<div>}            //loops through 3 times because there is 3 properties                 “nick&quot;</div>
+<div>                                                                                                                    “nick&quot;</div>
 <div><br/></div>
 <div>.hasOwnProperty</div>
 <div><br/></div>
@@ -83,4 +86,6 @@
 <div><br/></div>
 <div><br/></div>
 <div><br/></div>
-</body></html>
+</en-note>
+]]></content><created>20160208T164841Z</created><updated>20160208T173103Z</updated><note-attributes><author>mcarthurnick@gmail.com</author><source>desktop.mac</source><reminder-order>0</reminder-order></note-attributes></note>
+</en-export>
