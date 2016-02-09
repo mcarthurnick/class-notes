@@ -1,5 +1,6 @@
 // Functions are fundamental to JavaScript, and take on multiple
-// roles.  They can be stand-alone functions, they can be methods when assigned to a property of an object, or they can serve as a constructor for other objects.
+// roles.  They can be stand-alone functions, they can be methods when assigned to a property of an object,
+//or they can serve as a constructor for other objects.
 
 // A simple function
 function calculateTax(amount) {
