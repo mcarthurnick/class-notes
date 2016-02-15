@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" conent="width=device-width"/>
+    <title>Angular Intro</title>
+  </head>
+  <body>
+    <div ng-controller='main'>
+      <div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="inputFilters">
+          <input class="bigInput" placeholder='name' ng-model='partsFilter.name' />
+          <input class="bigInput" placeholder='price' ng-model='partsFilter.price' />
+          <input class="bigInput" placeholder='sku' ng-model='partsFilter.sku' />
+          <input class="bigInput" placeholder='weight' ng-model='partsFilter.weight'  />
+      </div>
+      <div class='cards' ng-repeat='parts in products | filter: partsFilter'>
+      <h1>{{parts.name}}</h1>
+      <h4>{{parts.price}}</h4>
+      <h4>{{parts.sku}}</h4>
+      <h4>{{parts.weight}}</h4>
+      </div>
+
+      <!-- <h3 ng-show='returningCustomer'>Thanks for coming back to our site!</h3>
+      <h3 ng-hide='returningCustomer'>Welcome to our site, feel free to look around!</h3>
+      <br />
+      <button ng-click='returningCustomer = !returningCustomer'>Click Me</button>
+        -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
