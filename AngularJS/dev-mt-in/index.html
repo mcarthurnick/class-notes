@@ -17,21 +17,21 @@
   <div class="wrapper">
     <div>
       <h2>Profile</h2>
-      <button class="l-btn l-btn-main">Editing :</button>
+      <button class="l-btn l-btn-main" ng-click="editing = !editing">Editing: {{editing}}</button>
     </div>
 
     <div>
 
-      <input id="name" type="text" placeholder="Your Name">
+      <input id="name" type="text" placeholder="Your Name" ng-model="myProfile.name" ng-disabled="!editing">
       <br />
 
-      <input id="likes" type="text" placeholder="Likes">
+      <input id="likes" type="text" placeholder="Likes" ng-model="myProfile.likes" ng-disabled="!editing">
       <br />
 
-      <input id="favColor" type="text" placeholder="Favorite Color">
+      <input id="favColor" type="text" placeholder="Favorite Color" ng-model="myProfile.color" ng-disabled="!editing">
       <br />
-      <button class="l-btn l-btn-success">Save</button>
-      <button class="l-btn l-btn-danger">Delete</button>
+      <button class="l-btn l-btn-success" ng-click="saveProfile(myProfile)">Save</button>
+      <button class="l-btn l-btn-danger" ng-click="deleteProfile()">Delete</button>
     </div>
   </div>
 
@@ -39,8 +39,9 @@
     <h2>Friends</h2>
 
     <button class="l-btn l-btn-main">Go</button>
-    <input type="text" placeholder="Find Friends">
-    <div class="friendList" ng-repeat="friend in myProfile.friends">
+    <input type="text" placeholder="Find Friends" ng-model="findFriend.name">
+    <select ng-model="sortReverse" ng-options="option.value as option.display for option in sortOptions"></select>
+    <div class="friendList" ng-repeat="friend in myProfile.friends | filter: findFriend.name | orderBy: 'name' : sortReverse">
       <span class="closeBtn"></span>
         {{ friend.name }}
       <br />
@@ -68,6 +69,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
   <script src="app.js"></script>
   <script src="homeCtrl.js"></script>
+  <script src="profileService.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title>Angular Service</title>
+  </head>
+  <body>
+    <main ng-controller="FirstCtrl">
+      <form>
+        <h1>Artist Info</h1> Artist Name:
+        <input type="text" placeholder="name" ng-model="name" />
+        <h1>Artist Genre</h1> Artist Genre:
+        <input type="text" placeholder="genre" ng-model="genre" />
+        <h1>Artist Score</h1> Artist Score:
+        <input type="number" placeholder="number" ng-model="score" />
+
+        <button type="submit" ng-click="addArtist()"> Add </button>
+      </form>
+      <section class="list-main-container">
+        <header>
+          <h2 ng-show='reallyLike.length != 0'>really like</h2>
+          <h2 ng-show='kindOfLike.length != 0'>kind of like</h2>
+        </header>
+
+        <div class="list-container">
+          <div ng-repeat="artist in reallyLike">
+            <h4>Name: {{artist.name}}</h4>
+            <h4>Genre: {{artist.genre}}</h4>
+            <h4>Score: {{artist.score}}</h4>
+          </div>
+        </div>
+        <div class="list-container">
+          <div ng-repeat="artist in kindOfLike">
+            <h4>Name: {{artist.name}}</h4>
+            <h4>Genre: {{artist.genre}}</h4>
+            <h4>Score: {{artist.score}}</h4>
+          </div>
+        </div>
+
+      </section>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+     <script src="app.js"></script>
+     <script src="myController.js"></script>
+     <script src="service.js"></script>
+    </main>
+  </body>
+</html>
